@@ -27,7 +27,7 @@ body {
 }
 
 #yesButton {
-    position: absolute;
+    /* position: absolute; */
     margin-right: 150px;
     /* Smooth movement */
 }
@@ -45,7 +45,7 @@ body {
 .buttons {
     width: 900px;
     display: flex;
-    gap: 200px;
+    gap: 20px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -76,6 +76,7 @@ body {
 
 .btn:hover {
     background-color: #FAF9F6;
+    color: rgb(255, 155, 208);
 }
 
 .gif_container {
@@ -94,8 +95,16 @@ img {
     position: absolute;
     right: 850px;
 }
-@media (max-width:500px){
-      .btn:first-child{
-        margin-right: 20px;
+@media(max-width:1220px){
+    #noButton {
+        margin-left: 80px;
     }
-}
+    .btn:first-child{
+        margin-right: 90px;
+    }
+    
+    #yesButton {
+        position: absolute;
+        right: 600px;
+    }
+    
